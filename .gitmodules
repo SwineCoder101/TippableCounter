@@ -4,3 +4,6 @@
 [submodule "foundry/lib/solmate"]
 	path = foundry/lib/solmate
 	url = https://github.com/transmissions11/solmate
+[submodule "lib/solmate"]
+	path = lib/solmate
+	url = https://github.com/transmissions11/solmate
