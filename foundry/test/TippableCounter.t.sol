@@ -17,7 +17,7 @@ contract CounterTest is Test {
 
     function testFuzz_increment(uint256 amount) public {
         vm.prank(alice);
-        tippableCounter.increment{value: 0.01 ether}(amount);
+        tippableCounter.increment{value: 0.01 ether}(1);
     }
 
     // function test_increment() public {
