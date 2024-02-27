@@ -15,9 +15,11 @@ contract CounterTest is Test {
         vm.deal(bob, 10 ether);
     }
 
-    function testFuzz_increment(uint256 amount) public {
+    function testFuzz_increment(uint8 amount) public {
+        vm.assume(amount >= 1);
+        vm.assume(amount <= 10);
         vm.prank(alice);
-        tippableCounter.increment{value: 0.01 ether}(1);
+        tippableCounter.increment{value: 0.01 ether}(amount);
     }
 
     // function test_increment() public {
