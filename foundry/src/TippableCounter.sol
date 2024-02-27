@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.22;
 
-import "solmate/auth/Owned.sol";
+import "lib/solmate/src/auth/Owned.sol";
 
 contract TippableCounter is Owned {
     uint256 counter;
