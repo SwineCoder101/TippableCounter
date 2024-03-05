@@ -4,7 +4,7 @@ pragma solidity ^0.8.22;
 import "lib/solmate/src/auth/Owned.sol";
 
 contract TippableCounter is Owned {
-    uint256 counter;
+    uint256 public counter;
 
     event Incremented(address indexed sender, uint8 incrementedBy, uint256 ethSent);
 
